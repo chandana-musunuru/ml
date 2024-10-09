@@ -1,0 +1,45 @@
+a)Dataset Overview
+  The dataset was downloaded from Kaggle contains emails labeled as either "Spam" or "Not Spam.
+  Shape of Data:memory usage ,
+                7 attributes-'sender', 'receiver', 'date', 'subject', 'body', 'label', 'urls'
+                rows after cleaning 38669,before 39154
+  Preprocessing:
+   1)Handling Missing Data-remove rows
+   2)URL Extraction-from body
+   3)Text Cleaning-by removing URLs, special characters, and digits, converting to lowercase, and filtering out stopwords 
+   4)Lemmatization-Words are reduced to their base form using a lemmatizer from running to run
+   5)message length for better model performance.
+  Data Visualization
+    Pie chart shows balanced distribution between spam and non-spam emails based on the label attribute
+  Word Cloud Visualization
+   A WordCloud is generated from the body of the email body to show the most frequent spam words like free," "click," and "win" 
+
+b)metrics
+  ROC AUC Score:Area under ROC curve  Overall model performance
+      measures the model's ability to distinguish between the positive and negative classes. An AUC of 1 indicates perfect discrimination, while an AUC of 0.5 indicates no discrimination
+  Accuracy score= (True Positives+True Negatives)/Total Instances   General performance; can be misleading in imbalanced data
+           Accuracy is the ratio of correctly predicted instances to the total instances
+  Precision score= True Positives/(True Positives+False Positives) Correctness of positive predictions
+           Precision measures the proportion of positive predictions that were actually correct
+  F1 Score=(2× (Precision×Recall))/(Precision+Recall)    Balance between precision and recall
+           F1 Score is the harmonic mean of precision and reca
+  Recall score= (True Positives)/(True Positives+False Negatives)  Ability to find all relevant positive instances
+           Recall measures the proportion of actual positives that were correctly identified
+ Precision: 1.00 (100% of predicted not spam/spam were correct)
+ Recall: 0.89 (89% of actual not spam/spam were correctly identified)
+ F1 Score: 0.94 (Balance of precision and recall)
+ Support: 13463 (Number of actual not spam/spam samples)
+ Use Macro Average when you want to treat all classes equally, regardless of how many instances are in each class.
+ Use Weighted Average when you want to give more importance to the classes that are more prevalent in your dataset, providing a balanced performance measure for imbalanced datasets
+
+​
+
+
+​c)description of algorithms
+  LogisticRegression:
+                    Time taken for evaluation: 108.82 seconds
+  Multinomial Naive Bayes (MultinomialNB)
+  Random Forest Classifier:
+  Gradient Boosting Classifier:
+  
+  
