@@ -1,4 +1,5 @@
-# ml #deep learning #natural language processing
+# ml  #natural language processing #Mental Health Classification on Social Media Using Deep Learning and Sentiment Analysis
+
 Mental health issues have become increasingly prevalent in the digital era, especially among social media users. Many individuals express their thoughts and emotions online, making platforms like Twitter, Reddit, and forums rich sources of mental health indicators. However, detecting early signs of mental distress, such as depression, anxiety, or suicidal tendencies, remains a challenge. If identified early, proper intervention can help individuals receive timely support and treatment.
 
 Natural Language Processing (NLP) plays a crucial role in understanding text data, especially in sentiment analysis and mental health classification. To enhance performance, I explored BERT-based fine-tuning and BERT+LSTM models for classifying social media statements into different mental health conditions. By leveraging deep learning techniques, I aim to improve the accuracy and efficiency of mental health detection models
