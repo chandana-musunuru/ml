@@ -12,9 +12,11 @@ I worked with a dataset containing various mental health-related statements labe
    The BERT + LSTM model enhances the fine-tuned BERT by incorporating Long Short-Term Memory (LSTM) to capture sequential context in text. Instead of directly classifying text using BERT’s output, BERT embeddings are extracted and passed through a bidirectional LSTM layer. The LSTM layer captures long-term dependencies in the text, improving the model’s ability to handle more complex or lengthy mental health-related statements. The output from the LSTM is then passed to a fully connected layer to predict mental health statuses. The model’s training optimizes both the LSTM and the classification layers, and performance is evaluated using metrics like accuracy, recall, precision, and F1-score. With an accuracy of 78.51%, it performs slightly worse than the fine-tuned BERT model, but it excels in capturing sequential relationships in text. Future improvements may involve hyperparameter tuning, data augmentation, and the incorporation of other deep learning models such as CNNs or transformers.
 
 Comparison Summary
+
 Model	                            Accuracy	              Key Observations
-Fine-Tuned BERT	                  79.07%	                Works well for classification but lacks sequence-level understanding.
-BERT + LSTM	                      78.51%	                Captures sequential dependencies better but has slightly lower accuracy.
+
+Fine-Tuned BERT	                    79.07%	                Works well for classification but lacks sequence-level understanding.
+BERT + LSTM	                        78.51%	                Captures sequential dependencies better but has slightly lower accuracy.
 
 Challenges:
 Imbalanced Data: Some mental health categories have fewer samples, making classification harder
